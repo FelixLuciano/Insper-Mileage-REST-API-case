@@ -1,0 +1,22 @@
+{
+  "name": "insper-mileage-software",
+  "description": "Insper Mileage Software selective process case",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixLuciano/Insper-Mileage-Software.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "author": "FelixLuciano <felix.lucianodias@gmail.com>",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {}
+}

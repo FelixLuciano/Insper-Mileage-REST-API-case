@@ -3,9 +3,9 @@ CREATE DATABASE mileage;
 -- \c mileage
 
 CREATE TABLE Carros(
-  id SERIAL PRIMARY KEY,
-  modelo VARCHAR(255),
-  marca VARCHAR(255),
-  motor VARCHAR(255),
-  piloto VARCHAR(255)
+  id SERIAL PRIMARY KEY NOT NULL,
+  modelo VARCHAR(255) NOT NULL,
+  marca VARCHAR(255) NOT NULL,
+  motor VARCHAR(255) NOT NULL,
+  piloto VARCHAR(255) NOT NULL
 );

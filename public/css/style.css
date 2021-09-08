@@ -1,0 +1,113 @@
+:root {
+  font-size: 16px;
+}
+
+::selection {
+  background-color: #AAA;
+}
+
+body {
+  background-color: #EEE;
+  color: #111;
+  font-size: 1.125rem;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 700 !important;
+}
+
+a {
+  font-weight: bold;
+  color: currentcolor;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  border-radius: .5rem;
+  padding: .8rem .5rem;
+  background-color: #DDD;
+}
+
+input[type="button"] {
+  border: none;
+  border-radius: .5rem;
+  padding: .8rem .5rem;
+  background-color: #FBA;
+  font-weight: bold;
+}
+
+footer {
+  font-size: .9rem;
+}
+
+.page-container {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  transition: padding 300ms;
+}
+@media (min-width: 992px) {
+  .page-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .page-container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 64rem;
+  transition: padding 300ms;
+}
+@media (min-width: 992px) {
+  .container {
+    padding-left: 8rem !important;
+  }
+}
+
+.main-content {
+}
+
+.table {
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.table > .row {
+  display: grid;
+  grid-gap: 1rem;
+}
+.row.table-header {
+  font-weight: bold;
+}
+
+.row > .col {
+  display: grid;
+  grid-auto-flow: column;
+  gap: .4rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #CCC;
+}

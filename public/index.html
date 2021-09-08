@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FF450D">
+  <title>Insper Mileage Rest API case</title>
+  <link rel="icon" href="/favicon.svg?v=50f8d0459afbc49c476340abf7490c33" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32x32.png?v=50f8d0459afbc49c476340abf7490c33" type="image/png">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap'>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/app.js" type="module"></script>
+
+</head>
+<body>
+
+  <div class="page-container"><div class="container">
+    <header>
+      <img src="assets/mileage-logo.svg">
+      <h1>Insper Mileage Rest API case</h1>
+    </header>
+    
+    <main id="app">
+      <div class="table main-content">
+        <div class="row table-header cols-5">
+          <div class="col">Modelo</div>
+          <div class="col">Marca</div>
+          <div class="col">Motor</div>
+          <div class="col">Piloto</div>
+          <div class="col">Ações</div>
+        </div>
+        
+        <form action="http://127.0.0.1:5000/modelos" method="POST" class="row cols-5">
+          <div class="col">
+            <input type="text" name="modelo" placeholder="Modelo" v-model="modelo">
+          </div>
+          <div class="col">
+            <input type="text" name="marca" placeholder="Marca" v-model="marca">
+          </div>
+          <div class="col">
+            <input type="text" name="motor" placeholder="Motor" v-model="motor">
+          </div>
+          <div class="col">
+            <input type="text" name="piloto" placeholder="Piloto" v-model="piloto">
+          </div>
+          <div class="col">
+            <input type="button" value="Registrar" @click="registrarCarro()">
+          </div>
+        </form>
+
+        <div class="divider"></div>
+        
+        <div class="row cols-5" v-for="carro in carros">
+          <div class="col">
+            <input type="text" placeholder="Modelo" v-model="carro.modelo">
+          </div>
+          <div class="col">
+            <input type="text" placeholder="Marca" v-model="carro.marca">
+          </div>
+          <div class="col">
+            <input type="text" placeholder="Motor" v-model="carro.motor">
+          </div>
+          <div class="col">
+            <input type="text" placeholder="Piloto" v-model="carro.piloto">
+          </div>
+          <div class="col">
+            <input type="button" value="Modificar" @click="modificaCarro(carro)">
+            <input type="button" value="Deletar" @click="deletaCarro(carro.id)">
+          </div>
+        <div>
+          
+      </div>
+    </main>
+
+    <footer>
+      &copy; <a href="https://github.com/FelixLuciano" target="_blank" rel="noopener">Luciano Felix</a>, all rights reserved.
+      <a href="https://github.com/FelixLuciano/Insper-Mileage-REST-API-case#readme" target="_blank" rel="noopener">Veja no Github</a>.
+    </footer>
+  </div></div>
+
+</body>
+</html>

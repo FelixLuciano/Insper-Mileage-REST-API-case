@@ -1,6 +1,6 @@
 [Luciano Felix](https://github.com/FelixLuciano), [Insper](https://www.insper.edu.br/), 2021.
 
-[![Insper Mileage logo](assets/mileage-logo.svg)](https://inspermileage.netlify.app/)
+[![Insper Mileage logo](public/assets/mileage-logo.svg)](https://inspermileage.netlify.app/)
 
 # Insper Mileage RESTful API case
 

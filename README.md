@@ -54,10 +54,10 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
   body: JSON.stringify({
     password,
     data: {
-      modelo: "",
-      marca: "",
-      motor: "",
-      piloto: ""
+      modelo,
+      marca,
+      motor,
+      piloto
     }
   })
 })
@@ -74,10 +74,10 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
   body: JSON.stringify({
     password,
     data: {
-      modelo: "",
-      marca: "",
-      motor: "",
-      piloto: ""
+      modelo,
+      marca,
+      motor,
+      piloto
     }
   })
 })

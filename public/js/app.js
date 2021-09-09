@@ -1,6 +1,6 @@
 import { createApp, ref } from "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.10/vue.esm-browser.prod.min.js"
 
-const API_URL = "http://localhost:5000/modelos"
+const API_URL = "https://stark-ravine-77496.herokuapp.com/modelos"
 
 function myApp() {
   return {

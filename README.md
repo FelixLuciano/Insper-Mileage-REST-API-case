@@ -60,7 +60,6 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
       piloto: ""
     }
   })
-  }
 })
 ```
 
@@ -81,7 +80,6 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
       piloto: ""
     }
   })
-  }
 })
 ```
 
@@ -96,7 +94,6 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
   body: JSON.stringify({
     password
   })
-  }
 })
 ```
 

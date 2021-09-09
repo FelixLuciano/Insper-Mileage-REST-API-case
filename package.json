@@ -1,19 +1,17 @@
 {
-  "name": "insper-mileage-software",
-  "description": "Insper Mileage Software selective process case",
+  "name": "insper-mileage-rest-api-case",
+  "description": "About Case API REST do Processo Seletivo de Software do Insper Mileage.",
   "version": "1.0.0",
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelixLuciano/Insper-Mileage-Software.git"
+    "url": "git+https://github.com/FelixLuciano/Insper-Mileage-REST-API-case.git"
   },
   "license": "MIT",
   "private": true,
   "author": "FelixLuciano <felix.lucianodias@gmail.com>",
   "scripts": {
-    "start": "npm run build && npm run serve",
-    "serve": "node dist/main.js",
-    "build": "tsc --outDir dist"
+    "start": "ts-node src/main.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -28,6 +26,7 @@
     "@types/lodash": "^4.14.172",
     "@types/node": "^16.7.11",
     "@types/pg": "^8.6.1",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   }
 }

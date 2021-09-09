@@ -39,7 +39,6 @@ function myApp() {
           if (err.status === 401)
             alert("Senha incorreta!")
             
-
           console.error(err)
         }
       }
@@ -86,8 +85,10 @@ function myApp() {
           else throw(response)
         }
         catch (err) {
-          if (err.status === 401)
+          if (err.status === 401) {
             alert("Senha incorreta!")
+            location.reload()
+          }
 
           console.error(err)
         }

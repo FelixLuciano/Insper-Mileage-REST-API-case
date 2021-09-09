@@ -2,7 +2,7 @@
 
 [![Insper Mileage logo](public/assets/mileage-logo.svg)](https://inspermileage.netlify.app/)
 
-# Insper Mileage RESTful API case
+# Insper Mileage REST API case
 
 Este repositório contém o projeto referente a minha participação na 2ª fase do processo seletivo do [Insper Mileage](https://www.instagram.com/inspermileage/) na área de Software.
 
@@ -22,6 +22,10 @@ A atividade consiste na criação de uma [API REST](https://pt.wikipedia.org/wik
     -  Filtrar os carros pelo motor.
 
 4. Hospedar a aplicação em algum serviço de nuvem para aplicações.
+
+### Como utilizar
+
+To do.
 
 ### Licença
 

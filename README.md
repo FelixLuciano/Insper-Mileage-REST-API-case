@@ -31,7 +31,7 @@ A atividade consiste na criação de uma [API REST](https://pt.wikipedia.org/wik
 
 ```js
 fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
-  mthod: "GET"
+  method: "GET"
 })
 ```
 
@@ -39,7 +39,7 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
 
 ```js
 fetch("https://stark-ravine-77496.herokuapp.com/modelos/[motor]", {
-  mthod: "GET"
+  method: "GET"
 })
 ```
 
@@ -47,7 +47,7 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos/[motor]", {
 
 ```js
 fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
-  mthod: "POST",
+  method: "POST",
   headers: {
     "Content-Type": "application/json"
   },
@@ -67,7 +67,7 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos", {
 
 ```js
 fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
-  mthod: "PUT",
+  method: "PUT",
   headers: {
     "Content-Type": "application/json"
   },
@@ -87,7 +87,7 @@ fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
 
 ```js
 fetch("https://stark-ravine-77496.herokuapp.com/modelos/[id]", {
-  mthod: "DELETE",
+  method: "DELETE",
   headers: {
     "Content-Type": "application/json"
   },
